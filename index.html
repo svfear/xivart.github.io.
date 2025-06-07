@@ -1,1 +1,13 @@
-<h1>Test For Subdomain Takeover</h1>
+<h1>Subdomain Takeover by Svfear</h1>`
+
+    Attempt to Assign Custom Domain
+    In the GitHub Pages settings of the repository, try to assign the custom domain actions.tooling.travix.com.
+
+    Observe Domain Verification Failure
+    GitHub will display an error message:
+
+        "You must verify your domain..."
+        This occurs because you do not control the DNS for actions.tooling.travix.com.
+
+    Confirm Dangling Subdomain
+    Since the DNS points to a non-existent repo in the original owner’s account but you can create the repository yourself, the subdomain is dangling and vulnerable to takeover if verification is bypassed or changes.
